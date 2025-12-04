@@ -1,7 +1,138 @@
 <!DOCTYPE html>
-<html>
-  <head><title>My Site</title></head>
-  <body>
-    <h1>Hello from my GitHub Pages site!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George Polk — Greek History Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #1d3557;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    nav {
+      background: #457b9d;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav button {
+      background: #a8dadc;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.25s;
+    }
+    nav button:hover {
+      background: #f1faee;
+    }
+    .tab-content {
+      display: none;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+    .active {
+      display: block;
+    }
+    h2 {
+      margin-top: 0;
+      color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <header>George Polk & Greece — History Project</header>
+
+  <nav>
+    <button onclick="openTab('polk')">George Polk</button>
+    <button onclick="openTab('thess')">Thessaloniki</button>
+    <button onclick="openTab('greece')">Greece in the 1940s</button>
+    <button onclick="openTab('bibliography')">Bibliography</button>
+  </nav>
+
+  <section id="polk" class="tab-content active">
+    <h2>George Polk</h2>
+    <p>
+      George Polk was an American journalist working for CBS who became one of the most
+      controversial figures in post–World War II Greek history. Arriving in Greece in 1947,
+      Polk covered the Greek Civil War with a reputation for blunt honesty and criticism of
+      corruption he witnessed. On May 1948, he disappeared while attempting to interview
+      Communist guerrilla leaders in Northern Greece. His body was later discovered in the
+      Thermaic Gulf, bound and shot.
+    </p>
+    <p>
+      His murder sparked international investigations and political tension. The U.S. pressured
+      the Greek government to find a culprit, leading to a trial that many scholars argue was
+      politically motivated. The "Polk case" remains a symbol of Cold War pressures,
+      contested justice, and the dangers faced by journalists in politically divided societies.
+    </p>
+  </section>
+
+  <section id="thess" class="tab-content">
+    <h2>Thessaloniki</h2>
+    <p>
+      Thessaloniki, Greece’s second-largest city, played a major role in the events surrounding
+      George Polk’s death. In the late 1940s, it was a city marked by wartime destruction,
+      reconstruction, and political polarization. The port city was a strategic hub between the
+      Greek government forces and the Communist Democratic Army operating in Northern Greece.
+    </p>
+    <p>
+      The discovery of Polk’s body in the waters off Thessaloniki intensified international
+      scrutiny on the city. In addition to its political significance, Thessaloniki carried the
+      weight of its multicultural past: once home to one of Europe’s largest Jewish communities
+      before the Holocaust, and a commercial crossroads shaped by Ottoman, Jewish, and Greek
+      identities.
+    </p>
+  </section>
+
+  <section id="greece" class="tab-content">
+    <h2>Greece in the 1940s</h2>
+    <p>
+      The 1940s were one of the most turbulent decades in Greek history. Following the Axis
+      occupation of Greece during World War II, the nation fell into civil conflict between the
+      government (backed by the U.S. and Britain) and Communist-led forces who had played a
+      major role in wartime resistance. This conflict, known as the Greek Civil War (1946–1949),
+      marked the first proxy confrontation of the emerging Cold War.
+    </p>
+    <p>
+      Journalists like George Polk reported on corruption, foreign influence, and the bitter social
+      divisions characterizing Greek politics. Many scholars argue that U.S. policy sought to
+      stabilize Greece strategically, leading to pressure on Greek authorities to appear strong and
+      decisive in the face of Communist threat — a dynamic that contributed to the controversy of
+      the Polk investigation.
+    </p>
+  </section>
+
+  <section id="bibliography" class="tab-content">
+    <h2>Bibliography / Sources</h2>
+    <p>• Marton, Kati. <i>The Polk Conspiracy</i>. New York: Farrar, Straus and Giroux, 1990.</p>
+    <p>• King, David. <i>The Trial of George Polk</i>. London: Weidenfeld & Nicolson, 2020.</p>
+    <p>• Clogg, Richard. <i>A Concise History of Greece</i>. Cambridge University Press, 1992.</p>
+    <p>• Mazower, Mark. <i>Salonica, City of Ghosts</i>. HarperCollins, 2004.</p>
+    <p>• U.S. State Department Archives on Greece (1947–1949).</p>
+  </section>
+
+  <script>
+    function openTab(id) {
+      document.querySelectorAll('.tab-content').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
 </html>
