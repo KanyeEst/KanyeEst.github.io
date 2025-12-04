@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Cover‑Up Is Alleged in Reporter’s Killing in Greece",
+      "source": "The Washington Post (T. R. Reid, 1977)",
+      "year": 1977,
+      "text": "An investigative article arguing that the official version of George Polk's murder — that communist guerrillas committed the crime — contained major inconsistencies and that right‑wing, pro‑government forces or intelligence services may have been involved.",
+      "full": "The Washington Post article ‘Cover‑Up Is Alleged in Reporter’s Killing in Greece’ (Reid, 26 April 1977) reexamines the inquiry into Polk’s death. It claims that evidence used to convict the alleged perpetrators was weak, that a British intelligence officer associated with personnel in Salonika disappeared shortly after Polk’s murder, and that confessions may have been coerced under political pressure. The piece argues the case may have been closed prematurely to protect powerful domestic and foreign interests."
+    },
+    {
+      "id": 2,
+      "title": "The George Polk Case: Declassified Documents & New Evidence",
+      "source": "National Security Archive (CIA / US Gov. cables, 1948–1958)",
+      "year": 2002,
+      "text": "A collection of declassified cables and memoranda suggesting suppressed leads in the Polk investigation, including reports from American intelligence stations that questioned the official verdict.",
+      "full": "The National Security Archive’s ‘George Polk Case’ collection includes CIA and State Department cables from May 1948 onward, correspondence, memoranda, and reports that were previously classified. Some documents mention irregularities in the Macedonian region, conflicting witness statements, and alternate suspects alleged to be linked to right‑wing or intelligence‑related networks, raising doubt about the 1949 court verdict."
+    },
+    {
+      "id": 3,
+      "title": "Ο φόνος που σόκαρε την Ελλάδα – Το σκοτεινό μυστήριο του Τζορτζ Πολκ στον Θερμαϊκό",
+      "source": "Sportime.gr (Greek language review, 2025)",
+      "year": 2025,
+      "text": "A modern Greek-language summary of the Polk case, recounting the discovery of his body in the Thermaikos Gulf, the geographic and political context of Thessaloniki in 1948, and the enduring mystery surrounding who really killed him.",
+      "full": "Το άρθρο ανασκοπεί τα γεγονότα της 16ης Μαΐου 1948, όταν βρέθηκε το πτώμα του George Polk στα νερά του Θερμαϊκού κόλπου, δεμένο χειροπόδαρα και πυροβολημένο στο κεφάλι. Περιγράφει τις τότε πολιτικές αναταράξεις, τις κατηγορίες κατά του ΚΚΕ, αλλά και τις αμφιβολίες που έχουν εκφραστεί από δεκάδες ιστορικούς και ερευνητές για εμπλοκή παρακρατικών και ξένων υπηρεσιών. Τέλος τονίζει ότι ακόμη και σήμερα η υπόθεση παραμένει ανοιχτή και διεκδικείται νέα έρευνα."
+    }
+  ]
+}
