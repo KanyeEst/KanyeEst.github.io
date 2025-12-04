@@ -1,138 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>George Polk — Greek History Project</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: #1d3557;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.8rem;
-    }
-    nav {
-      background: #457b9d;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    nav button {
-      background: #a8dadc;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: 0.25s;
-    }
-    nav button:hover {
-      background: #f1faee;
-    }
-    .tab-content {
-      display: none;
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-    }
-    .active {
-      display: block;
-    }
-    h2 {
-      margin-top: 0;
-      color: #1d3557;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George Polk - Greek History Project</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>George Polk & Greece — History Project</header>
+  <header>
+    <h1>George Polk</h1>
+    <p class="subtitle">American Journalist and Cold War Era Reporter in Greece</p>
+  </header>
 
-  <nav>
-    <button onclick="openTab('polk')">George Polk</button>
-    <button onclick="openTab('thess')">Thessaloniki</button>
-    <button onclick="openTab('greece')">Greece in the 1940s</button>
-    <button onclick="openTab('bibliography')">Bibliography</button>
-  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><button onclick="openTab('personal')">Personal Life</button></li>
+          <li><button onclick="openTab('early')">Life Before Greece</button></li>
+          <li><button onclick="openTab('greece')">Reporting in Greece</button></li>
+          <li><button onclick="openTab('murder')">The Murder & Investigation</button></li>
+          <li><button onclick="openTab('legacy')">Legacy & Awards</button></li>
+          <li><button onclick="openTab('bibliography')">Bibliography</button></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <section id="polk" class="tab-content active">
-    <h2>George Polk</h2>
-    <p>
-      George Polk was an American journalist working for CBS who became one of the most
-      controversial figures in post–World War II Greek history. Arriving in Greece in 1947,
-      Polk covered the Greek Civil War with a reputation for blunt honesty and criticism of
-      corruption he witnessed. On May 1948, he disappeared while attempting to interview
-      Communist guerrilla leaders in Northern Greece. His body was later discovered in the
-      Thermaic Gulf, bound and shot.
-    </p>
-    <p>
-      His murder sparked international investigations and political tension. The U.S. pressured
-      the Greek government to find a culprit, leading to a trial that many scholars argue was
-      politically motivated. The "Polk case" remains a symbol of Cold War pressures,
-      contested justice, and the dangers faced by journalists in politically divided societies.
-    </p>
-  </section>
+    <main>
+      <section id="personal" class="tab-content active">
+        <h2>Personal Life</h2>
+        <p>George Washington Polk Jr. was born in 1913 in New York City. He grew up in a politically aware family, developing an early interest in writing and current events. Polk attended Hamilton College, studying English literature, and later ventured into journalism, where he quickly gained a reputation for incisive reporting and a commitment to uncovering the truth.</p>
+        <p>He married but spent much of his life traveling and reporting from conflict zones. Polk's personal charisma, courage, and dedication to journalistic integrity made him respected among peers and feared by those whose misdeeds he exposed.</p>
+      </section>
 
-  <section id="thess" class="tab-content">
-    <h2>Thessaloniki</h2>
-    <p>
-      Thessaloniki, Greece’s second-largest city, played a major role in the events surrounding
-      George Polk’s death. In the late 1940s, it was a city marked by wartime destruction,
-      reconstruction, and political polarization. The port city was a strategic hub between the
-      Greek government forces and the Communist Democratic Army operating in Northern Greece.
-    </p>
-    <p>
-      The discovery of Polk’s body in the waters off Thessaloniki intensified international
-      scrutiny on the city. In addition to its political significance, Thessaloniki carried the
-      weight of its multicultural past: once home to one of Europe’s largest Jewish communities
-      before the Holocaust, and a commercial crossroads shaped by Ottoman, Jewish, and Greek
-      identities.
-    </p>
-  </section>
+      <section id="early" class="tab-content">
+        <h2>Life Before Greece</h2>
+        <p>Before his assignments in Greece, Polk reported extensively across Europe and the Mediterranean. He covered political upheavals and social unrest, building experience in war correspondence. He was particularly known for his willingness to challenge authorities and report unpopular truths, a trait that would define his career in Greece.</p>
+        <p>His work prior to 1947 includes coverage of the aftermath of World War II, the Nuremberg Trials, and early postwar tensions that foreshadowed the Cold War. Polk’s reporting style combined rigorous investigation with compelling narrative, which earned him positions at CBS and other news outlets.</p>
+      </section>
 
-  <section id="greece" class="tab-content">
-    <h2>Greece in the 1940s</h2>
-    <p>
-      The 1940s were one of the most turbulent decades in Greek history. Following the Axis
-      occupation of Greece during World War II, the nation fell into civil conflict between the
-      government (backed by the U.S. and Britain) and Communist-led forces who had played a
-      major role in wartime resistance. This conflict, known as the Greek Civil War (1946–1949),
-      marked the first proxy confrontation of the emerging Cold War.
-    </p>
-    <p>
-      Journalists like George Polk reported on corruption, foreign influence, and the bitter social
-      divisions characterizing Greek politics. Many scholars argue that U.S. policy sought to
-      stabilize Greece strategically, leading to pressure on Greek authorities to appear strong and
-      decisive in the face of Communist threat — a dynamic that contributed to the controversy of
-      the Polk investigation.
-    </p>
-  </section>
+      <section id="greece" class="tab-content">
+        <h2>Reporting in Greece</h2>
+        <p>Arriving in Greece in 1947, Polk entered a nation still recovering from the Axis occupation and embroiled in civil conflict. His assignments included monitoring U.S. foreign aid usage, investigating political corruption, and documenting the struggle between Greek government forces and communist insurgents.</p>
+        <p>Thessaloniki, the city where Polk ultimately met his end, was a focal point for political tensions, with its strategic port and diverse population making it central to both domestic and international interests. Polk's investigative work often brought him into dangerous situations, as he sought to report on the complexities of the Greek Civil War and the influence of foreign powers.</p>
+      </section>
 
-  <section id="bibliography" class="tab-content">
-    <h2>Bibliography / Sources</h2>
-    <p>• Marton, Kati. <i>The Polk Conspiracy</i>. New York: Farrar, Straus and Giroux, 1990.</p>
-    <p>• King, David. <i>The Trial of George Polk</i>. London: Weidenfeld & Nicolson, 2020.</p>
-    <p>• Clogg, Richard. <i>A Concise History of Greece</i>. Cambridge University Press, 1992.</p>
-    <p>• Mazower, Mark. <i>Salonica, City of Ghosts</i>. HarperCollins, 2004.</p>
-    <p>• U.S. State Department Archives on Greece (1947–1949).</p>
-  </section>
+      <section id="murder" class="tab-content">
+        <h2>The Murder & Investigation</h2>
+        <p>On May 15, 1948, George Polk disappeared while investigating corruption allegations in Northern Greece. His body was found days later in Salonika Bay, bound and shot in the head. The murder prompted widespread international attention and a highly politicized investigation.</p>
+        <p>Greek authorities arrested several suspects, but the trials were controversial, with allegations of coerced confessions and political interference. Scholars and journalists have debated the identity of Polk's killers, examining the roles of both local actors and foreign governments. The murder remains a symbol of the dangers faced by journalists in conflict zones and the political pressures of early Cold War Greece.</p>
+      </section>
+
+      <section id="legacy" class="tab-content">
+        <h2>Legacy & Awards</h2>
+        <p>Polk's death left a lasting impact on journalism. In 1949, Long Island University established the George Polk Awards to honor outstanding reporting. The awards remain among the most prestigious in the field, emphasizing investigative work and courage in the face of danger.</p>
+        <p>Polk's approach to reporting—uncompromising and fearless—continues to influence journalists today. His legacy is particularly relevant for those covering politically sensitive or high-risk areas, emphasizing the need for integrity and commitment to the truth.</p>
+        <div id="dynamic-articles">
+          <h3>Sample Excerpts from Polk's Work</h3>
+          <ul id="articles-list">Loading...</ul>
+        </div>
+      </section>
+
+      <section id="bibliography" class="tab-content">
+        <h2>Bibliography / References</h2>
+        <ul>
+          <li>Kati Marton, <em>The Polk Conspiracy</em>, Times Books, 1990.</li>
+          <li>Richard Clogg, <em>A Concise History of Greece</em>, Cambridge University Press, 1992.</li>
+          <li>Mark Mazower, <em>Salonica: City of Ghosts</em>, HarperCollins, 2004.</li>
+          <li>Long Island University, George Polk Awards page.</li>
+          <li>National Security Archive, "George Polk Case" Collection (declassified documents).</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <p style="text-align:center;padding:20px;color:#555;">Educational project — created by student.</p>
+  </footer>
 
   <script>
-    function openTab(id) {
-      document.querySelectorAll('.tab-content').forEach(sec => sec.classList.remove('active'));
+    function openTab(id){
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
+
+    // Simulate fetching Polk's articles from an API
+    const sampleArticles = [
+      {title: 'Corruption in Postwar Greece', excerpt: 'Polk reported extensively on the misuse of U.S. aid in Greece, highlighting bureaucratic inefficiency and political manipulation.'},
+      {title: 'Life Under Occupation', excerpt: 'Polk detailed the effects of Axis occupation on Greek civilians, emphasizing human suffering and resilience.'},
+      {title: 'Cold War Tensions', excerpt: 'He provided early insights into emerging Cold War dynamics in Southeast Europe, especially in Northern Greece.'}
+    ];
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const listEl = document.getElementById('articles-list');
+      listEl.innerHTML = '';
+      sampleArticles.forEach(article => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${article.title}:</strong> ${article.excerpt}`;
+        listEl.appendChild(li);
+      });
+    });
   </script>
+
+  <style>
+    /* Styles for Wikipedia-style layout */
+    .container { display: flex; margin: 20px; }
+    .sidebar { flex: 0 0 200px; background: #f0f0f0; padding: 20px; border-radius: 8px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar li { margin-bottom: 10px; }
+    .sidebar button { width: 100%; padding: 10px; border: none; background: #ddd; border-radius: 4px; cursor: pointer; text-align: left; }
+    .sidebar button:hover { background: #ccc; }
+    main { flex: 1; padding: 20px; background: #fff; border-radius: 8px; margin-left: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    h1, h2 { color: #1d3557; }
+    p { margin-bottom: 1em; }
+  </style>
 </body>
 </html>
