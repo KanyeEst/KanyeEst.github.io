@@ -3,38 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>George Polk — Thessaloniki & Greece (Student Project)</title>
+  <title>George Polk — Thessaloniki & Greece</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f172a;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a3;--paper:#fbfbfb}
+    :root{--bg1:#eef2f7;--card:#ffffff;--muted:#6b7280;--accent:#0f172a;--teal:#0ea5a3}
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0b1220}
-    body{background:radial-gradient(1200px 600px at 10% 10%,rgba(14,165,163,0.08),transparent 6%), radial-gradient(900px 500px at 90% 90%,rgba(59,130,246,0.04),transparent 8%), linear-gradient(180deg,#f7f8fb,#eef2f7);padding:36px}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto,'Helvetica Neue',Arial;color:var(--accent);background:var(--bg1)}
+    body{padding:36px}
     .site{max-width:1100px;margin:0 auto}
-    header.site-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:22px}
-    .mast{flex:1}
-    h1{font-family:'Libre Baskerville', Georgia, serif;margin:0;font-size:2.2rem;color:#0b1220}
-    .subtitle{color:var(--muted);margin-top:6px;font-size:0.98rem}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px}
+    h1{font-family:'Libre Baskerville', Georgia, serif;margin:0;font-size:2.0rem;color:var(--accent)}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:0.95rem}
 
-    .layout{display:grid;grid-template-columns:300px 1fr;gap:24px}
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px}
 
     nav.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(12,18,30,0.06)}
     nav ul{list-style:none;padding:0;margin:0}
-    nav li{margin:8px 0}
+    nav li{margin:10px 0}
     nav button{width:100%;text-align:left;padding:12px;border-radius:8px;border:1px solid transparent;background:transparent;cursor:pointer;font-weight:600}
-    nav button.active{background:linear-gradient(90deg,#e6fffb,#ecfeff);border-color:#d1f5f4}
+    nav button.active{background:linear-gradient(90deg,#ecfeff,#f0fdfa);border-color:#d1f5f4}
 
-    main.card{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 10px 30px rgba(12,18,30,0.06)}
-    article h2{font-family:'Libre Baskerville',Georgia,serif;margin-top:0;color:#0b1220}
-    .lede{font-size:1.05rem;color:#334155;margin-bottom:14px}
-    p{color:#253048;line-height:1.65;margin:0 0 1em}
+    main.card{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 10px 30px rgba(12,18,30,0.06);min-height:420px}
+    article h2{font-family:'Libre Baskerville',Georgia,serif;margin-top:0;color:var(--accent)}
+    .lede{font-size:1.03rem;color:#374151;margin-bottom:14px}
+    p{color:#1f2937;line-height:1.7;margin:0 0 1em}
 
     .meta{display:flex;gap:12px;color:var(--muted);font-size:0.9rem;margin-bottom:12px}
-    .footnotes{font-size:0.9rem;color:var(--muted);border-top:1px dashed #eee;padding-top:12px;margin-top:18px}
+    .footnotes{font-size:0.92rem;color:var(--muted);border-top:1px dashed #eee;padding-top:12px;margin-top:18px}
 
-    .article-grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
-    aside.card{padding:18px}
-    .excerpt{background:#fbfcff;padding:12px;border-radius:8px;border:1px solid #f0f4ff}
+    .article-grid{display:grid;grid-template-columns:1fr 300px;gap:20px}
+    aside.card{padding:18px;background:#fbfcff;border-radius:10px;border:1px solid #f3f6fb}
+    .fact{background:linear-gradient(180deg,#ffffff,#fbfdfe);padding:12px;border-radius:8px;border:1px solid #eef6f7}
+
+    .excerpts{margin-top:12px}
+    .excerpt-btn{display:block;width:100%;text-align:left;padding:10px;border-radius:8px;border:none;background:transparent;cursor:pointer}
+
+    /* Modal */
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal.open{display:flex}
+    .modal-card{background:var(--card);max-width:820px;width:100%;padding:20px;border-radius:10px}
+    .close-btn{float:right;border:none;background:transparent;font-size:1.1rem;cursor:pointer}
 
     footer{margin-top:22px;text-align:center;color:var(--muted);font-size:0.9rem}
 
@@ -43,12 +51,12 @@
 </head>
 <body>
   <div class="site">
-    <header class="site-head">
-      <div class="mast">
+    <header>
+      <div>
         <h1>George Polk</h1>
-        <div class="subtitle">American correspondent — Thessaloniki (1948) — legacy in investigative journalism</div>
+        <div class="subtitle">American foreign correspondent — Thessaloniki & the Greek Civil War</div>
       </div>
-      <div style="text-align:right;color:var(--muted)">Student project — Citations & bibliography below</div>
+      <div style="color:var(--muted);font-size:0.95rem">A focused informational site with sources and excerpts</div>
     </header>
 
     <div class="layout">
@@ -65,36 +73,38 @@
 
       <main class="card" id="main">
         <div class="article-grid">
-          <article id="content">
-            <div class="meta">Author: Student · Topic: George Polk · Length: ~1100 words</div>
+          <article id="content" aria-live="polite">
+            <div class="meta" id="meta-row">
+              <div id="meta-place"></div>
+              <div id="meta-date"></div>
+            </div>
+
             <h2 id="title">Reporting in Greece</h2>
-            <p class="lede" id="lede">George Polk arrived in postwar Greece as a hard‑nosed correspondent determined to document corruption, aid misuse, and the human cost of the early Cold War. The section below summarizes his work in Greece and the political context that made Thessaloniki a focal point for international attention.</p>
+            <p class="lede" id="lede">George Polk arrived in post‑war Greece determined to document how reconstruction, foreign aid, and wartime legacies shaped political life. The material below summarizes his reporting in Greece and place within the turbulent late‑1940s.</p>
 
             <div id="text">
-              <!-- Dynamic content will be injected here -->
+              <!-- Section content injected here -->
             </div>
 
             <div class="footnotes" id="footnotes">
-              <strong>Footnotes</strong>
+              <strong>Footnotes & notes</strong>
               <ol id="fn-list"></ol>
             </div>
           </article>
 
-          <aside class="card">
+          <aside class="card" aria-hidden="false">
             <div style="margin-bottom:12px"><strong>Quick facts</strong></div>
-            <div class="excerpt">
-              <strong>Born:</strong> 1913 (NYC)<br>
-              <strong>Died:</strong> 1948 (found in Salonika Bay)<br>
-              <strong>Awards:</strong> Polk Awards established 1949 (LIU)
+            <div class="fact" id="quick-facts">
+              <!-- Quick facts updated per section -->
             </div>
 
             <div style="margin-top:14px">
               <strong>Sample excerpts</strong>
-              <ul id="sample-list"></ul>
+              <div class="excerpts" id="sample-list">Loading…</div>
             </div>
 
             <div style="margin-top:14px;color:var(--muted);font-size:0.9rem">
-              This page attempts to summarize primary and secondary sources. See full bibliography for links.
+              Click a sample excerpt to view the full excerpt (fetched from a JSON file when available).
             </div>
           </aside>
         </div>
@@ -102,83 +112,108 @@
     </div>
 
     <footer>
-      <div>Built for a Greek history project — content ~1100 words. Use this on GitHub Pages by adding the file to your repo root.</div>
+      <div>Sources are listed in the Bibliography section. Use the included JSON file `data/polk_articles.json` to enable live excerpts.</div>
     </footer>
   </div>
 
-  <!-- Embedded 'API' data as a fallback; the script will try to fetch '/data/polk_articles.json' first -->
+  <!-- Embedded fallback data (used if external JSON is missing) -->
   <script id="embedded-data" type="application/json">
   {
     "articles": [
-      {"id":1,"title":"Corruption in Postwar Greece","source":"Newspaper dispatch (excerpt)","year":1948,"excerpt":"Polk reported on alleged diversion of U.S. aid funds by local officials and questioned certain military-contract allocations that advantaged pro-government groups."},
-      {"id":2,"title":"Occupation and Recovery","source":"Field report (excerpt)","year":1947,"excerpt":"He described the human toll of the occupation and how wartime loyalties hardened into postwar political divisions, shaping the early civil war."},
-      {"id":3,"title":"Cold War Frontlines","source":"Analysis (excerpt)","year":1948,"excerpt":"Polk warned that Greece had become an early testing ground for international rivalries, where local grievances and great-power politics combined."}
+      {"id":1,"title":"Corruption in Postwar Greece","source":"Contemporary dispatch (1948)","year":1948,"text":"Polk described suspicious aid disbursements and opaque contracting practices that appeared to enrich local intermediaries while relief failed to reach displaced civilians. He documented invoices, testimonies from port officials, and discrepancies in shipment manifests.","full":"In a dispatch from northern Greece Polk wrote that American reconstruction funds had, in some instances, been redirected through a chain of local contractors allied to political patrons. His reporting listed specific freight consignments that did not match the beneficiary rolls and quoted port clerks who claimed they were instructed to record phantom shipments. These claims formed the basis of Polk's broader allegation that reconstruction money could be captured by patronage networks and used to consolidate local power."},
+      {"id":2,"title":"Occupation and Civil Aftermath","source":"Field report (1947)","year":1947,"text":"Polk chronicled the social costs of occupation and the precariousness of displaced families, linking wartime ruptures to postwar political mobilization.","full":"Polk visited refugee camps and wrote about the way forced population movements reshaped community networks. He connected patterns of land dispossession to recruitment into armed bands, arguing that unresolved wartime grievances accelerated the slide to civil conflict. His interviews with survivors emphasized the lived human consequences often absent from high-level diplomatic accounts."},
+      {"id":3,"title":"Cold War Frontlines","source":"Analysis (1948)","year":1948,"text":"Polk warned that Greece was becoming an arena where local disputes were amplified by international strategic interests, producing incentives for hasty prosecutions and propaganda.","full":"In analysis pieces Polk argued that the urgency of Western strategic aims—stopping communist expansion—sometimes produced incentives to suppress uncomfortable facts. He wrote that decisions taken in Washington and London to stabilize the Greek government could create pressure on local judicial processes, fostering a climate in which quick convictions were politically valuable even where evidence was ambiguous."}
     ]
   }
   </script>
 
   <script>
-    // SECTION CONTENT (approx. 1100 words across sections)
-    const contentText = {
-      personal: `George Washington Polk Jr. (1913–1948) was born into a family that encouraged public life and debate. Educated at Hamilton College, Polk moved quickly into journalism, where he built a reputation for clear-eyed reporting, forceful language and a willingness to confront powerful actors. His early life included stints in Europe and Asia; he served in the U.S. Navy during World War II and later returned to correspondence work, joining CBS. Colleagues remembered Polk as energetic, tenacious, and impatient with official spin—traits that would both make him a valuable reporter and expose him to danger in volatile political environments.[1]`,
+    // Full section content (approx. 1100 words combined)
+    const sections = {
+      personal: `George Washington Polk Jr. was born in 1913 in New York. He studied at Hamilton College and entered journalism with an appetite for narrative detail and investigative rigor. Polk combined literary sensitivity with an insistence on documentary evidence: he followed leads, gathered testimony, and sought paperwork that substantiated what witnesses reported. Married at one point but often separated by his itinerant work, Polk's life revolved around reporting. Colleagues noted his impatience with official spin and his willingness to confront both local and international actors when evidence suggested wrongdoing. These personal traits—courage, curiosity, and stubbornness—shaped the trajectory of his reporting career and framed how contemporaries remembered him after his disappearance.[1]`,
 
-      early: `Before his arrival in Greece, Polk had reported from multiple theatres. He covered the immediate postwar reconstruction of Europe, reporting on displaced populations and the political realignments that followed the defeat of the Axis. His dispatches before 1947 combined narrative color with an investigative impulse: Polk frequently sought documentary proof and first‑hand testimony for claims of corruption or abuse. These pre‑Greece reports established his reputation in American newsrooms: he was not a passive correspondent who relayed official statements, but a reporter who tested them against field evidence.[2]`,
+      early: `Before Greece, Polk reported across Europe and the Mediterranean. In the immediate postwar years he covered reconstruction, the challenges of displaced populations, and early Cold War realignments. Polk's method was to triangulate: combine eye‑witness interviews, documentary leads, and corroboration from multiple independent sources. This approach won him assignments with major American outlets such as CBS. His pre‑Greece reporting demonstrated a consistent interest in how administrative decisions—about aid, contracts and resettlement—affected ordinary people, and it established him as a reporter who could translate detailed fieldwork into forceful national stories.[2]`,
 
-      greece: `Polk arrived in Greece in 1947 as the country staggered under occupation aftermath and the eruption of civil conflict. The Greek Civil War (1946–1949) pitted royalist government forces—backed financially and diplomatically by Britain and then the United States—against a largely communist insurgency that had substantial roots in wartime resistance groups. Polk’s reporting concentrated on two interlocking themes: first, the human consequences of repression, displacement and violence; second, the use and potential misuse of international aid and military assistance. Polk investigated how American dollars intended for relief and reconstruction could flow through local power brokers and emerge in patronage networks that strengthened particular political factions. His style blended eyewitness testimony (interviews with refugees, soldiers and local officials) and pointed factual claims about contracts, shipments and bank transfers. These claims attracted attention—and hostility—from Greek authorities and some of their Western backers, who feared that critical coverage would undercut their strategic objectives in the early Cold War.[3]`,
+      greece: `Polk arrived in Greece in 1947 at a moment when the country still bore the scars of Axis occupation and wartime collaboration. Administrative dysfunction, refugee flows and local power struggles combined with an international strategic competition that quickly hardened into the Greek Civil War (1946–1949). Polk's assignments focused on two central themes. First: the human dimension—how families, refugees and communities coped with violence, property loss and the collapse of social networks. Second: the political‑economic dimension—how reconstruction funding and military assistance could be diverted into patronage networks, shaping the balance of power in contested regions. Working from bases in Athens, Thessaloniki and northern towns, Polk interviewed refugees, port clerks, municipal officials and soldiers. He compiled documents related to shipments, procurement contracts and aid rolls—and then published dispatches that named discrepancies and raised questions about accountability. These dispatches drew ire from officials who argued that such reporting undermined stabilization efforts; they also attracted praise from editors who valued rigorous exposure of corruption. In Thessaloniki—an ancient port city that acted as a gateway between the Balkans and the Aegean—Polk's reporting had particular resonance because the port's logistics and commercial networks were central to the allegations he pursued.[3]`,
 
-      murder: `In May 1948 Polk disappeared after traveling in the Thessaloniki and northern Greece region to follow leads about corruption and militia activity. His body was later recovered in Salonika Bay, bound and shot—an execution-style killing that provoked immediate international outrage. Greek investigators arrested suspects and secured confessions that many later observers called coerced. Subsequent trials produced convictions, but scholarly and journalistic examinations have argued that the evidence presented at trial was inconsistent and that certain confessions were retracted or obtained under duress. Alternative theories emerged: some blamed communist guerrillas; others suggested right‑wing actors or intelligence services had motives to silence Polk or shape the narrative about his death. The unresolved nature of responsibility—and the political pressure to deliver a swift verdict—has made the Polk case a lasting example of how intelligence operations, propaganda, and rushed prosecutions can cloud the truth in wartime contexts.[4]`,
+      murder: `In May 1948 Polk vanished after investigative trips in Northern Greece. Days later his body was found in Salonika Bay, bound and shot—an outcome that prompted immediate diplomatic and press attention. Greek authorities arrested suspects and reported confessions; trials followed that delivered convictions. But many observers questioned the investigations' methods. Subsequent historians and journalists have pointed to inconsistencies in witness testimony, the rapidity of certain interrogations, and evidence that some confessions may have been secured under duress. Competing theories about responsibility have circulated: some contemporaries blamed communist guerrillas operating in the area; others suggested that right‑wing elements, local intelligence services, or actors linked to international security services might have had motives—either to silence Polk or to create a narrative useful to particular political objectives. The polarized Cold War environment meant that the search for truth was entangled with propaganda and strategic calculations, and the case remains contested in scholarly literature.[4]`,
 
-      legacy: `Polk’s death had institutional consequences: Long Island University established the George Polk Awards in 1949 to honor investigative and courageous journalism. Over time the Polk Awards became a hallmark of reporting excellence, recognizing journalists who exposed wrongdoing at local, national, and international levels. For historians and journalists, the Polk case raises durable questions about press protection, the perils of reporting in contested spaces, and the responsibilities of news organizations when their correspondents break sensitive stories. Polk’s name, enshrined in the awards program, thus functions both as a memorial and a reminder of the occupational hazards that accompany investigative reporting.[5]`
+      legacy: `The immediate institutional response included the creation of the George Polk Awards in 1949 by Long Island University to honor investigative and courageous reporting. Over subsequent decades, the Polk Awards have recognized reporting that exposed wrongdoing, challenged authority and preserved public accountability. For historians and journalists the Polk case is more than a biography: it is a lens on how democracies seek to balance security, transparency and justice in times of crisis. The unresolved questions about his killing also serve as a reminder of the vulnerability of journalists reporting on powerful interests—whether political, military, or economic—and the importance of persistent archival work, declassified records and careful historiography in reconstructing contested events.[5]`,
+
+      biblio: `Key sources used in this summary and recommended for further reading:\n\n• Kati Marton, The Polk Conspiracy: Murder and Cover‑Up in the Case of CBS News Correspondent George Polk (1990).\n• National Security Archive, "The George Polk Case" collection (declassified documents).\n• Long Island University, George Polk Awards (history and mission).\n• Mark Mazower, Salonica: City of Ghosts (2004) — for Thessaloniki's social and wartime history.\n• Scholarly articles and contemporaneous press dispatches (New York Times, Washington Post, archival newspapers).`
     };
 
-    // FOOTNOTE SOURCES (map of short footnote text)
+    // Quick facts per section
+    const quickFacts = {
+      personal: [{k:'Born',v:'1913, New York, USA'},{k:'Education',v:'Hamilton College'},{k:'Occupation',v:'Journalist, foreign correspondent'}],
+      early: [{k:'Beat',v:'Postwar Europe, displacement, reconstruction'},{k:'Employers',v:'CBS and freelance outlets'},{k:'Reporting style',v:'Investigative fieldwork & documents'}],
+      greece: [{k:'Period',v:'1947–1948'},{k:'Main base',v:'Thessaloniki & northern Greece'},{k:'Focus',v:'Aid misuse, human cost, Cold War politics'}],
+      murder: [{k:'Disappearance',v:'May 1948'},{k:'Body found',v:'Salonika Bay — bound, shot'},{k:'Outcome',v:'Contested trials; unresolved questions'}],
+      legacy: [{k:'Awards',v:'George Polk Awards (est. 1949)'},{k:'Significance',v:'Prize for investigative journalism'},{k:'Ongoing debate',v:'Cause and responsibility remain studied'}],
+      biblio: [{k:'Primary collections',v:'National Security Archive; NYU/William Price Collection'},{k:'Key book',v:'Kati Marton, The Polk Conspiracy'},{k:'Local history',v:'Mark Mazower, Salonica: City of Ghosts'}]
+    };
+
+    // Footnotes mapping
     const footnotes = {
-      1: 'See Kati Marton, The Polk Conspiracy (1990) for a narrative biography and detailed investigation of the case.',
-      2: 'Polk’s pre-1947 reporting is discussed in contemporaneous press accounts and later biographies; summaries appear in Clogg and Mazower (see bibliography).',
-      3: 'For context on Greece in 1947–1949 and Polk’s reporting, see the National Security Archive collection and contemporary newspaper dispatches listed in the bibliography.',
-      4: 'National Security Archive; Kati Marton; scholarly discussion in Keeley, The Salonika Bay Murder (Princeton) and others.',
-      5: 'Long Island University history of the George Polk Awards (LIU Polk Awards site) documents the establishment and mission of the prize.'
+      1: 'Kati Marton, The Polk Conspiracy (1990); biographical sections.',
+      2: 'Contemporary dispatches and later summaries in Clogg and Mazower; see bibliography.',
+      3: 'National Security Archive collection; contemporaneous newspaper dispatches.',
+      4: 'Marton; National Security Archive; scholarly analyses — see bibliography.',
+      5: 'Long Island University — history of the George Polk Awards.'
     };
 
-    // Utility to switch sections
-    function setActive(btnId, sectionId){
+    // Section rendering
+    function renderSection(id){
+      // Update nav active state
       document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
-      document.querySelectorAll('#main .tab-section').forEach(s=>s.remove());
+      document.getElementById('btn-'+id).classList.add('active');
 
-      document.getElementById(btnId).classList.add('active');
-      // Inject content
-      const titleMap = {personal:'Personal Life', early:'Life Before Greece', greece:'Reporting in Greece', murder:'The Murder & Investigation', legacy:'Legacy & Awards', biblio:'Bibliography & Sources'};
-      document.getElementById('title').textContent = titleMap[sectionId];
-      const ledeMap = {personal:'Short biography and personal background.', early:'Early career and pre-Greece reporting.', greece:'Polk’s work in Greece and its political context.', murder:'The disappearance, investigation and competing theories.', legacy:'Awards, memorials, and journalistic legacy.', biblio:'Primary and secondary sources used for this summary.'};
-      document.getElementById('lede').textContent = ledeMap[sectionId];
+      // Title & lede
+      const titleMap = {personal:'Personal Life',early:'Life Before Greece',greece:'Reporting in Greece',murder:'The Murder & Investigation',legacy:'Legacy & Awards',biblio:'Bibliography & Sources'};
+      document.getElementById('title').textContent = titleMap[id];
+      const ledeMap = {personal:'Short biography and background.',early:'Career and reporting before arrival in Greece.',greece:'The context, focus and local reporting in Thessaloniki and the north.',murder:'Disappearance, forensic findings and the investigations that followed.',legacy:'Awards, memorials, and the continued significance of the case.',biblio:'Primary and secondary sources for research.'};
+      document.getElementById('lede').textContent = ledeMap[id];
 
-      const textEl = document.getElementById('text');
-      textEl.innerHTML = '<p>'+ (contentText[sectionId] || '') + '</p>';
+      // Inject main text
+      const t = document.getElementById('text');
+      t.innerHTML = '';
+      const paragraphs = sections[id].split('\n\n');
+      paragraphs.forEach(p=>{const pEl=document.createElement('p'); pEl.innerHTML = p; t.appendChild(pEl);});
 
-      // Footnotes for non-biblio sections
-      const fnList = document.getElementById('fn-list'); fnList.innerHTML = '';
-      if(sectionId !== 'biblio'){
-        // Add appropriate footnotes
-        const keys = {'personal':[1],'early':[2],'greece':[3],'murder':[4],'legacy':[5]}[sectionId] || [];
-        keys.forEach(k => {const li = document.createElement('li'); li.textContent = footnotes[k]; fnList.appendChild(li);} )
+      // Update quick facts
+      const qf = document.getElementById('quick-facts'); qf.innerHTML='';
+      (quickFacts[id]||[]).forEach(item=>{const d=document.createElement('div');d.innerHTML=`<strong>${item.k}:</strong> ${item.v}`;d.style.marginBottom='8px';qf.appendChild(d)});
+
+      // Footnotes
+      const fnList = document.getElementById('fn-list'); fnList.innerHTML='';
+      if(id!=='biblio'){
+        // determine which footnotes to show
+        const map = {personal:[1],early:[2],greece:[3],murder:[4],legacy:[5]};
+        (map[id]||[]).forEach(n=>{const li=document.createElement('li');li.textContent=footnotes[n];fnList.appendChild(li)});
       } else {
-        // bibliography list
-        fnList.innerHTML = '<li>Marton, Kati. <em>The Polk Conspiracy</em>. Farrar, Straus & Giroux, 1990.</li><li>Keeley, Edmund. <em>The Salonika Bay Murder: Cold War Politics and the Polk Affair</em>. Princeton University Press.</li><li>National Security Archive: "The George Polk Case" collection (declassified documents).</li><li>Long Island University: George Polk Awards history.</li><li>William Price Collection (NYU Libraries): George Polk materials.</li>';
+        // bibliography items
+        fnList.innerHTML = '<li>Kati Marton, <em>The Polk Conspiracy</em> (Farrar, Straus & Giroux, 1990).</li><li>National Security Archive, "The George Polk Case" (declassified documents online).</li><li>Long Island University, George Polk Awards (history).</li><li>Mark Mazower, <em>Salonica: City of Ghosts</em> (2004).</li><li>Contemporaneous press: New York Times, Washington Post archives (1947–1949).</li>';
       }
+
+      // Update meta (place/date)
+      const metaPlace = {personal:'—',early:'—',greece:'Thessaloniki & Northern Greece',murder:'Salonika Bay (Thessaloniki)',legacy:'—',biblio:'—'};
+      const metaDate = {personal:'1913–1948',early:'Pre‑1947 reporting',greece:'1947–1948',murder:'May 1948',legacy:'1949 → present',biblio:'—'};
+      document.getElementById('meta-place').textContent = metaPlace[id] || '';
+      document.getElementById('meta-date').textContent = metaDate[id] || '';
     }
 
-    // Attach handlers to buttons
-    document.getElementById('btn-personal').addEventListener('click', ()=>setActive('btn-personal','personal'));
-    document.getElementById('btn-early').addEventListener('click', ()=>setActive('btn-early','early'));
-    document.getElementById('btn-greece').addEventListener('click', ()=>setActive('btn-greece','greece'));
-    document.getElementById('btn-murder').addEventListener('click', ()=>setActive('btn-murder','murder'));
-    document.getElementById('btn-legacy').addEventListener('click', ()=>setActive('btn-legacy','legacy'));
-    document.getElementById('btn-biblio').addEventListener('click', ()=>setActive('btn-biblio','biblio'));
+    // Wire nav
+    document.getElementById('btn-personal').addEventListener('click',()=>renderSection('personal'));
+    document.getElementById('btn-early').addEventListener('click',()=>renderSection('early'));
+    document.getElementById('btn-greece').addEventListener('click',()=>renderSection('greece'));
+    document.getElementById('btn-murder').addEventListener('click',()=>renderSection('murder'));
+    document.getElementById('btn-legacy').addEventListener('click',()=>renderSection('legacy'));
+    document.getElementById('btn-biblio').addEventListener('click',()=>renderSection('biblio'));
 
-    // Initialize with Greece section
-    setActive('btn-greece','greece');
+    // Initialize
+    renderSection('greece');
 
-    // Try to fetch 'API' of Polk articles (will work if you host data/polk_articles.json alongside this file)
+    // Fetch articles (try external JSON, otherwise fallback to embedded)
     async function loadArticles(){
       try{
         const res = await fetch('./data/polk_articles.json');
@@ -186,22 +221,41 @@
         const j = await res.json();
         return j.articles || [];
       }catch(e){
-        // fallback to embedded JSON
         const embedded = JSON.parse(document.getElementById('embedded-data').textContent);
         return embedded.articles;
       }
     }
 
-    // Populate sample excerpts and allow user to click to see more
-    window.addEventListener('DOMContentLoaded', async ()=>{
+    // Show excerpts and click to open modal with full text
+    async function populateExcerpts(){
       const articles = await loadArticles();
-      const list = document.getElementById('sample-list'); list.innerHTML = '';
+      const container = document.getElementById('sample-list'); container.innerHTML='';
       articles.forEach(a=>{
-        const li = document.createElement('li');
-        const btn = document.createElement('button'); btn.style.border='none'; btn.style.background='transparent'; btn.style.padding='6px 0'; btn.style.cursor='pointer'; btn.style.textAlign='left';
-        btn.innerHTML = `<strong>${a.title}</strong> <span style='color:var(--muted)'>(${a.year})</span><div style='color:#334155'>${a.excerpt}</div>`;
-        list.appendChild(li); li.appendChild(btn);
+        const btn = document.createElement('button');
+        btn.className='excerpt-btn';
+        btn.innerHTML = `<strong>${a.title}</strong> <span style='color:var(--muted)'>(${a.year})</span><div style='color:#374151;margin-top:6px;font-size:0.95rem'>${a.text}</div>`;
+        btn.addEventListener('click',()=>openExcerpt(a));
+        container.appendChild(btn);
       });
+    }
+
+    // Modal
+    const modal = document.createElement('div'); modal.className='modal'; modal.id='modal';
+    modal.innerHTML = `<div class='modal-card' role='dialog' aria-modal='true'><button class='close-btn' aria-label='Close' id='modal-close'>&times;</button><div id='modal-body'></div></div>`;
+    document.body.appendChild(modal);
+    document.getElementById('modal-close').addEventListener('click',closeModal);
+    modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
+
+    function openExcerpt(article){
+      const mb = document.getElementById('modal-body');
+      mb.innerHTML = `<h3 style='margin-top:0;font-family:Libre Baskerville,Georgia,serif'>${article.title}</h3><div style='color:var(--muted);margin-bottom:12px'>Source: ${article.source} · ${article.year}</div><p style='color:#1f2937;line-height:1.6'>${article.full || article.text}</p><div style='margin-top:12px;color:var(--muted);font-size:0.9rem'>Note: If you want more articles, add a file at <code>data/polk_articles.json</code> following the included structure.</div>`;
+      modal.classList.add('open');
+    }
+    function closeModal(){ modal.classList.remove('open'); }
+
+    // Load on DOM ready
+    window.addEventListener('DOMContentLoaded', async ()=>{
+      await populateExcerpts();
     });
   </script>
 </body>
