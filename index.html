@@ -112,7 +112,7 @@
     </div>
 
     <footer>
-      <div>Sources are listed in the Bibliography section. data/polk_articles.json contains the article information</div>
+      <div>Sources are listed in the Bibliography section. data/polk_articles.json contains the article</div>
     </footer>
   </div>
 
@@ -266,7 +266,7 @@ Beyond the awards, Polk's legacy continues in the standards he set for investiga
 
     function openExcerpt(article){
       const mb = document.getElementById('modal-body');
-      mb.innerHTML = `<h3 style='margin-top:0;font-family:Libre Baskerville,Georgia,serif'>${article.title}</h3><div style='color:var(--muted);margin-bottom:12px'>Source: ${article.source} · ${article.year}</div><p style='color:#1f2937;line-height:1.6'>${article.full || article.text}</p><div style='margin-top:12px;color:var(--muted);font-size:0.9rem'>Note: If you want more articles, add a file at <code>data/polk_articles.json</code> following the included structure.</div>`;
+      mb.innerHTML = `<h3 style='margin-top:0;font-family:Libre Baskerville,Georgia,serif'>${article.title}</h3><div style='color:var(--muted);margin-bottom:12px'>Source: ${article.source} · ${article.year}</div><p style='color:#1f2937;line-height:1.6'>${article.full || article.text}</p><div style='margin-top:12px;color:var(--muted);font-size:0.9rem'>If you want more articles, add a file at <code>data/polk_articles.json</code></div>`;
       modal.classList.add('open');
     }
     function closeModal(){ modal.classList.remove('open'); }
