@@ -2,67 +2,75 @@
   "articles": [
     {
       "id": 1,
-      "title": "The Polk Conspiracy: summary and claims",
+      "title": "The Polk Conspiracy — short summary",
       "source": "Kati Marton, The Polk Conspiracy (1990)",
       "year": 1990,
-      "text": "Marton’s book reexamines the Polk murder and argues that the official investigation left important questions unanswered; she discusses alleged cover-ups and problematic evidence.",
-      "full": "Kati Marton’s The Polk Conspiracy (1990) offers a narrative reconstruction of George Polk’s life, reporting and death. Marton casts doubt on the official account by examining trial records, witness statements and interviews with investigators. She argues that some confessions were likely coerced and that political and intelligence actors created incentives to close the case quickly. Marton’s work is an important secondary source for understanding the contested evidence and the broader Cold War environment that shaped the investigation."
+      "text": "Kati Marton reexamines George Polk’s life, reporting, and the investigation into his death, arguing that the official account left many questions unanswered.",
+      "full": "Marton’s book walks through Polk’s reporting in Greece and the messy investigation that followed his murder. She looks at trial records, interviews with people involved, and how political pressures shaped the official story. Marton does not claim to have the final answer, but she argues convincingly that important leads and inconsistencies were ignored and that some confessions may have been coerced.",
+      "url": "https://books.google.com/books/about/The_Polk_Conspiracy.html?id=uhJcBAAAQBAJ"
     },
     {
       "id": 2,
-      "title": "Declassified cables in the Polk file",
-      "source": "National Security Archive — George Polk collection (declassified materials)",
-      "year": 2002,
-      "text": "Declassified State Department and intelligence cables point to inconsistent witness reports and to internal U.S. concerns about how the Greek investigation was unfolding.",
-      "full": "The National Security Archive’s George Polk collection aggregates declassified cables, State Department memoranda and intelligence reports that illuminate the U.S. diplomatic and intelligence view of the investigation. Several contemporaneous documents reveal American officials’ unease with rushed prosecutions and identify lines of inquiry that were not fully pursued in public trials. These materials are invaluable for researchers tracing how international actors viewed the case and the reliability of local evidence."
+      "title": "The George Polk Case (declassified documents & analysis)",
+      "source": "National Security Archive — 'The George Polk Case' briefing book",
+      "year": 2007,
+      "text": "The National Security Archive collected declassified State Department and intelligence cables that shed light on the Polk investigation and show U.S. officials’ concerns.",
+      "full": "The Archive’s briefing book assembles cables, memoranda and analysis that reveal how diplomats and intelligence officers tracked the Polk case. It highlights conflicting witness reports, questions about the official prosecutions, and notes about missing or destroyed records. These documents are a key primary source for anyone researching the case.",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB226/index.htm"
     },
     {
       "id": 3,
-      "title": "Contemporaneous press dispatches: initial coverage",
-      "source": "The New York Times, Washington Post (1948 contemporary dispatches)",
-      "year": 1948,
-      "text": "Immediate newspaper reporting recorded Polk’s disappearance and the discovery of his body, the arrests that followed, and the official narrative that initially attributed the killing to guerrilla action.",
-      "full": "In May 1948 major U.S. newspapers covered Polk’s disappearance, the discovery of his body in Salonika Bay, and the swift arrests and trials that followed. Early dispatches focused on the drama of a journalist found executed in a turbulent region and relayed official statements blaming communist guerrillas. Later reporting and investigative pieces, however, raised doubts about the evidence used at trial and described contradictions in witness testimony."
+      "title": "Cover-Up Is Alleged in Reporter's Killing in Greece (1977)",
+      "source": "The Washington Post (April 26, 1977)",
+      "year": 1977,
+      "text": "A 1977 Washington Post article revisits the Polk case and reports allegations that the official narrative may have covered up inconvenient facts.",
+      "full": "This Washington Post piece examines claims that the original investigation was hurried and that evidence put forward at trial was weaker than publicly presented. The article helped renew interest in the case in the 1970s and drew on interviews and documents that suggested alternate scenarios for Polk’s death.",
+      "url": "https://www.washingtonpost.com/archive/politics/1977/04/26/cover-up-is-alleged-in-reporters-killing-in-greece-in-1948/78dfb6a2-e00e-4fcb-9906-0bb58f66510a/"
     },
     {
       "id": 4,
-      "title": "Reexaminations and investigative pieces",
-      "source": "Post-war investigative journalism and later features (1970s–1990s)",
-      "year": 1977,
-      "text": "Journalistic reexaminations in later decades revisited Polk’s case with access to more documents, interviews and scholarly commentary; some pieces suggested alternate scenarios and questioned the reliability of confessions presented at trial.",
-      "full": "Investigative journalists and historians in the 1970s–1990s published features that dug into previously overlooked records and interviewed surviving witnesses. These reexaminations often highlighted procedural irregularities, the political pressures on Greek prosecutors during the early Cold War, and the complex role of intelligence services operating in the region. Such work deepened skepticism about the official verdict and expanded public awareness of unresolved questions."
+      "title": "Contemporaneous press: 'Appointment in Salonika' (Time)",
+      "source": "Time Magazine (May 1948)",
+      "year": 1948,
+      "text": "Contemporary coverage (Time and others) reported Polk’s disappearance and the discovery of his body in Salonika Bay, plus the initial claims blaming guerrillas.",
+      "full": "Time covered Polk’s disappearance and the discovery of his body in mid-May 1948, relaying the official account that blamed communist guerrillas. These early reports are useful to see how the story first appeared in the international press and how official claims shaped the narrative then.",
+      "url": "https://time.com/archive/6785299/the-press-appointment-in-salonika/"
     },
     {
       "id": 5,
-      "title": "Thessaloniki and local context",
-      "source": "Mark Mazower, Salonica: City of Ghosts (2004) — contextual background",
-      "year": 2004,
-      "text": "Mazower’s book gives a rich history of Thessaloniki, explaining how wartime occupations, population displacements and social change made the city a contested political space in the 1940s.",
-      "full": "Mark Mazower’s Salonica: City of Ghosts provides the social and cultural backdrop for understanding why Thessaloniki mattered for the Polk case. Mazower reconstructs the city’s Ottoman, Jewish and Greek layers and explains how the wartime rupture and postwar realignments produced local tensions and vulnerabilities. This context helps explain why allegations about contracts, port shipments and patronage networks resonated deeply in local political life."
+      "title": "William Price Collection on the Murder of George Polk (finding aid)",
+      "source": "NYU Tamiment/Wagner Library — William Price Collection",
+      "year": 1996,
+      "text": "NYU’s finding aid describes the William Price collection, which contains transcripts, clippings and materials from the Newsmen’s Commission that investigated Polk’s death.",
+      "full": "The William Price Collection at NYU holds correspondence, trial transcripts, press clippings and other materials gathered by journalists and campaigners who looked into Polk’s murder. The finding aid explains what is in the collection and how researchers can access these primary materials.",
+      "url": "https://findingaids.library.nyu.edu/tamwag/tam_159/contents/"
     },
     {
       "id": 6,
-      "title": "A Greek retrospective on the Polk case",
-      "source": "Greek-language review and historical features (various Greek press and historical reviews)",
-      "year": 2010,
-      "text": "Greek retrospectives revisit the murder in local context, noting the political polarization of the late 1940s and the continuing local interest in who was truly responsible.",
-      "full": "Several Greek-language articles and historical reviews revisit the Polk case to discuss its impact on Greek public life and memory. These pieces typically summarize the known facts—the discovery of Polk’s body in the Thermaic Gulf, the arrests and trial—and emphasize that the event is still debated among historians in Greece, especially given the tensions of the civil war and the presence of foreign intelligence actors in the region."
+      "title": "Greek press & retrospectives (examples)",
+      "source": "Kathimerini / Greek research pieces (example PDF and local retrospectives)",
+      "year": 2004,
+      "text": "Greek-language retrospectives and academic notes revisit the facts, local context, and enduring questions about the Polk case in Thessaloniki.",
+      "full": "Greek newspapers and researchers have repeatedly returned to the Polk case, summarizing the discovery of Polk’s body in the Thermaic Gulf, the arrests and trial, and the continuing debate in Greece over who was responsible. A few Greek research papers and press retrospectives collect local testimony and archival references that complement English-language sources.",
+      "url": "https://s.kathimerini.gr/resources/article-files/meletigiapolk.pdf"
     },
     {
       "id": 7,
-      "title": "Academic literature: trials and contested evidence",
-      "source": "Scholarly articles analyzing Cold War justice and wartime prosecutions",
-      "year": 1995,
-      "text": "Scholars have used the Polk case to study how political pressures can shape judicial processes during wartime, pointing out patterns of rushed prosecutions and contested confessions.",
-      "full": "Academic analyses of the Polk case situate it within broader studies of transitional justice, wartime prosecutions and Cold War politics. Scholars note that the need to provide a politically satisfactory outcome—especially when allied governments are under international scrutiny—can create incentives for hasty investigations and for privileging evidence consistent with strategic narratives. These studies emphasize the value of archival research and critical historiography for reassessing high-profile cases like Polk’s."
+      "title": "Academic discussion: 'The Salonika Bay Murder' (Edmund Keeley) and related studies",
+      "source": "Edmund Keeley, The Salonika Bay Murder (1989) — scholarly perspective",
+      "year": 1989,
+      "text": "Edmund Keeley’s academic treatment (and other scholarly work) places Polk’s death in Cold War context and examines trial records and political pressures.",
+      "full": "Keeley’s study and other scholarly works analyze how the Greek civil war and early Cold War politics affected investigations and public narratives. These works are useful for understanding broader structural reasons why the case was handled the way it was and why it remains contested.",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB226/index.htm"
     },
     {
       "id": 8,
-      "title": "Long Island University and the Polk Awards",
-      "source": "Long Island University — George Polk Awards history",
+      "title": "George Polk Awards — background and history",
+      "source": "Long Island University — George Polk Awards pages",
       "year": 1949,
-      "text": "LIU created the George Polk Awards in 1949 to honor courageous and investigative reporting in memory of Polk.",
-      "full": "Following Polk’s death, Long Island University established the George Polk Awards to commemorate his commitment to investigative journalism. The awards recognize work that demonstrates courage, rigorous reporting, and public service. The history of the prize and its past winners serves as a living legacy of the values Polk embodied in his reporting."
+      "text": "Long Island University established the George Polk Awards in 1949 in memory of Polk to honor investigative and courageous reporting.",
+      "full": "The Polk Awards were created shortly after Polk’s death to recognize courageous reporting. LIU’s site includes a history of the award and lists past winners — the awards are part of Polk’s continuing legacy in journalism.",
+      "url": "https://liu.edu/polk"
     }
   ]
 }
